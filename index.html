@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerna Kitchen - Homemade Sweets & Savouries</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-brown: #4A2518; /* Dark brown background */
+            --accent-gold: #F4C430;   /* Gold title text */
+            --card-bg: #FFF8E7;       /* Cream color for cards */
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-brown);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #5C281B 0%, #4A2518 100%);
+        }
+
+        h1 {
+            font-family: 'Brush Script MT', cursive; 
+            font-size: 4rem;
+            color: var(--accent-gold);
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        /* Menu Grid */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Product Card Styling */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Image Styling - Updated */
+        .product-img {
+            width: 100%;
+            height: 250px;       /* Fixed height for uniformity */
+            object-fit: cover;   /* Ensures image fills box without distortion */
+            display: block;
+            border-bottom: 3px solid #F8E4B8;
+        }
+
+        .product-name {
+            background-color: #F8E4B8; 
+            width: 90%;
+            margin: -20px auto 10px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            transform: rotate(-2deg); 
+            z-index: 10;
+        }
+
+        .price-tag {
+            background-color: var(--primary-brown);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer / Contact */
+        .cta-section {
+            background-color: #F8E4B8;
+            color: var(--primary-brown);
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Prerna Kitchen</h1>
+        <p class="subtitle">Homemade Delights | Sweets | Savouries</p>
+    </header>
+
+    <div class="container">
+        <div class="menu-grid">
+            
+            <div class="card">
+                <img src="Ragi_Laddu.png" alt="Ragi Laddu" class="product-img">
+                <div class="product-name">Ragi Laddu</div>
+                <div class="price-tag">₹400 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Namkin_Mathri.png" alt="Namkin Mathri" class="product-img">
+                <div class="product-name">Namkin Mathri</div>
+                <div class="price-tag">₹350 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Gond_Laddu.jpg" alt="Gond Laddu" class="product-img">
+                <div class="product-name">Gond Laddu</div>
+                <div class="price-tag">₹400 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Amla-Chili-Pickles.png" alt="Amla-Chilli Pickle" class="product-img">
+                <div class="product-name">Amla-Chilli Pickle</div>
+                <div class="price-tag">₹130 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Gulab_Jamun.png" alt="Gulab Jamun" class="product-img">
+                <div class="product-name">Gulab Jamun</div>
+                <div class="price-tag">₹25 / 1 Pc</div>
+            </div>
+
+            <div class="card">
+                <img src="Thekua.png" alt="Thekua" class="product-img">
+                <div class="product-name">Thekua</div>
+                <div class="price-tag">₹350 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="TIL-LADDU.png" alt="Til Laddu" class="product-img">
+                <div class="product-name">Til Laddu</div>
+                <div class="price-tag">₹380 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Murmura-Laddu.jpeg" alt="Murmura Laddu" class="product-img">
+                <div class="product-name">Murmura Laddu</div>
+                <div class="price-tag">₹350 / 250g</div>
+            </div>
+
+            <div class="card">
+                <img src="Gujiya.jpeg" alt="Gujiya" class="product-img">
+                <div class="product-name">Gujiya</div>
+                <div class="price-tag">₹400 / 250g</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="cta-section">
+        <h2>Ready to Order?</h2>
+        <p>DM us on WhatsApp to place your order or for bulk inquiries.</p>
+        <a href="https://wa.me/91" class="whatsapp-btn" target="_blank">
+            Chat on WhatsApp (+91-)
+        </a>
+        <br><br>
+        <small>&copy; 2026 Prerna Kitchen</small>
+    </footer>
+
+</body>
+</html>
